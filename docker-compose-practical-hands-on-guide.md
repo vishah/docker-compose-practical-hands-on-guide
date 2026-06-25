@@ -20,6 +20,7 @@ By the end of the guide, you should be able to:
 ## How To Use This Guide
 
 - Work through the labs in order. Each lab builds on the previous one.
+- The lab paths in this guide are relative to the directory that contains this file: `outputs/`.
 - Type commands yourself instead of copy-pasting everything at once.
 - After each lab, pause and explain the result in your own words.
 - Break things on purpose. Change a port, remove a volume, or stop a dependency and see what happens.
@@ -171,7 +172,7 @@ Explanation:
 
 ## Lab 2: Build Your Own Image
 
-Path: `outputs/labs/lab-02-build-image`
+Path: `labs/lab-02-build-image`
 
 ### Goal
 
@@ -187,7 +188,7 @@ Build a small Flask web app into a custom image and run it.
 ### Step 1: Move Into The Lab Directory
 
 ```bash
-cd outputs/labs/lab-02-build-image
+cd labs/lab-02-build-image
 ```
 
 Explanation:
@@ -253,7 +254,7 @@ That makes builds faster, smaller, and less error-prone.
 
 ## Lab 3: Use Compose For Local Development
 
-Path: `outputs/labs/lab-03-compose-dev`
+Path: `labs/lab-03-compose-dev`
 
 ### Goal
 
@@ -276,7 +277,7 @@ cd ../lab-03-compose-dev
 If you are not currently in `lab-02-build-image`, use the full path:
 
 ```bash
-cd outputs/labs/lab-03-compose-dev
+cd labs/lab-03-compose-dev
 ```
 
 ### Step 2: Start The Stack
@@ -338,7 +339,7 @@ Explanation:
 
 ## Lab 4: Build A Multi-Service Application With Compose
 
-Path: `outputs/labs/lab-04-compose-multi-service`
+Path: `labs/lab-04-compose-multi-service`
 
 ### Goal
 
@@ -361,7 +362,7 @@ cd ../lab-04-compose-multi-service
 Or:
 
 ```bash
-cd outputs/labs/lab-04-compose-multi-service
+cd labs/lab-04-compose-multi-service
 ```
 
 ### Step 2: Start The Project
@@ -449,7 +450,7 @@ Explanation:
 
 ## Lab 5: A More Production-Like Compose Stack
 
-Path: `outputs/labs/lab-05-compose-productionish`
+Path: `labs/lab-05-compose-productionish`
 
 ### Goal
 
@@ -461,6 +462,7 @@ Run a small stack with an app, Redis, and Nginx, using healthchecks, an env file
 - `requirements.txt`
 - `Dockerfile`
 - `compose.yaml`
+- `.env`
 - `.env.example`
 - `nginx/default.conf`
 - `.dockerignore`
@@ -474,7 +476,7 @@ cd ../lab-05-compose-productionish
 Or:
 
 ```bash
-cd outputs/labs/lab-05-compose-productionish
+cd labs/lab-05-compose-productionish
 ```
 
 ### Step 2: Review The Runtime Env File
