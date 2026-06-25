@@ -1,0 +1,13 @@
+services:
+  web:
+    build: .
+    ports:
+      - "5000:5000"
+    environment:
+      APP_MODE: development
+      MESSAGE: Compose makes single-service development repeatable
+      FLASK_APP: app.py
+      FLASK_DEBUG: "1"
+    volumes:
+      - .:/app
+    command: flask run --host=0.0.0.0 --port=5000
